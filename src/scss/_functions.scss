@@ -1,0 +1,4 @@
+// px to rem function
+@function pxToRem($target, $context :$base-size){
+  @return ($target / $context) * 1rem;
+}

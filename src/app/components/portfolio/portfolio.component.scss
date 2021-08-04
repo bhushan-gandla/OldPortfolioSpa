@@ -1,0 +1,37 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "src/scss/component-imports";
+
+.portfolio-wrapper{
+  margin-bottom: pxToRem(360);
+}
+.portfolio-slides{
+  padding-top: pxToRem(45);
+  padding-bottom: pxToRem(45);
+  h3{
+    font-size: pxToRem(18);
+    margin-bottom: pxToRem(18);
+    font-weight: 700;
+  }
+  p{
+    font-size: pxToRem(18);
+  }
+  .portfolio-image{
+    width: 80%;
+  }
+}
+@include media-breakpoint-up(sm){
+  .portfolio-wrapper{
+    margin-bottom: pxToRem(450);
+  }
+}
+@include media-breakpoint-up(md){
+  .portfolio-slides{
+    padding-top: pxToRem(90);
+    padding-bottom: pxToRem(90);
+  }
+  .portfolio-wrapper{
+    margin-bottom: pxToRem(540);
+  }
+}

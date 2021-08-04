@@ -1,0 +1,88 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "src/scss/component-imports";
+
+.welcome-wrapper {
+  margin-top: pxToRem(54);
+  margin-bottom: pxToRem(150);
+}
+
+h1 {
+  font-size: pxToRem(54);
+  font-family: $font-family-DM-serif;
+  margin-bottom: pxToRem(63);
+}
+
+.sub-text {
+  font-size: $heading-1;
+  margin-bottom: pxToRem(54);
+}
+.welcome-image{
+  width: 100%;
+}
+
+@include media-breakpoint-up(md) {
+  .welcome-image{
+    width: 60%;
+  }
+}
+
+
+@include media-breakpoint-up(lg) {
+  // .welcome-wrapper {
+  //   margin-top: pxToRem(90);
+  //   margin-bottom: pxToRem(225);
+  // }
+  h1 {
+    font-size: pxToRem(72);
+    margin-bottom: pxToRem(90);
+  }
+  .sub-text {
+    margin-bottom: 0;
+  }
+  .welcome-image{
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .welcome-wrapper {
+    margin-top: pxToRem(144);
+    margin-bottom: pxToRem(225);
+  }
+}
+
+
+// /* The animation code */
+// @keyframes example {
+//   from {opacity: 1}
+//   to {opacity: 0}
+// }
+
+// /* The element to apply the animation to */
+// .role-1 {
+//   animation-name: example;
+//   animation-duration: 2s;
+
+// }
+
+// .role-2 {
+//   animation-name: example;
+//   animation-duration: 2s;
+//   animation-delay: 2s;
+// }
+
+.css-typing {
+  width: 30em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 5s steps(50, end);
+  animation: type 5s steps(50, end);
+}
+@keyframes type {
+  from { width: 0; }
+}
+@-webkit-keyframes type {
+  from { width: 0; }
+}

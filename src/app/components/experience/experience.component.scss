@@ -1,0 +1,42 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "src/scss/component-imports";
+
+.experience-list{
+  li{
+    display: flex;
+    .time{
+      margin-right: pxToRem(30);
+      font-size: $heading-2;
+      flex: 0 0 pxToRem(99);
+    }
+    .company{
+      font-family: $font-family-DM-serif;
+      font-size: $heading-1;
+    }
+    .location{
+      font-size: $heading-2;
+    }
+  }
+}
+
+@include media-breakpoint-up(md){
+  .experience-list{
+    li{
+      display: flex;
+      .time{
+        margin-right: pxToRem(72);
+        font-size: $heading-2;
+        flex: 0 0 pxToRem(171);
+      }
+      // .company{
+      //   font-family: $font-family-DM-serif;
+      //   font-size: $heading-1;
+      // }
+      // .location{
+      //   font-size: $heading-2;
+      // }
+    }
+  }
+}

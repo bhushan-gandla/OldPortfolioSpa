@@ -1,0 +1,71 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "src/scss/component-imports";
+
+.navbar{
+  min-height: $nav-bar-height;
+  padding: pxToRem(21) 0;
+
+  .custom-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: pxToRem(45);
+    width: pxToRem(45);
+    border-radius: 50%;
+    background-color: $light-highlight;
+    color: $primary;
+    border:none;
+    font-size: pxToRem(16);
+  }
+}
+.navbar-nav{
+  margin-top: pxToRem(18);
+  background-color: $tertiary;
+  padding: pxToRem(18);
+  border-radius: pxToRem(9);
+  .nav-item{
+    .nav-link{
+      color: $primary;
+      padding: 0;
+      margin: 0 0 pxToRem(15) 0;
+    }
+    &:last-child{
+      .nav-link{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+@include media-breakpoint-up(md) {
+  .navbar{
+    min-height: $nav-bar-md-height;
+    padding: 0;
+    .navbar-toggler{
+      display: none;
+    }
+  }
+  .navbar-nav{
+    margin-top: 0;
+    background-color: transparent;
+    padding:0;
+    border-radius: 0;
+    .nav-item{
+      .nav-link{
+        color: $primary;
+        padding: 0;
+        margin: 0 0 0 pxToRem(24);
+      }
+    }
+  }
+
+}

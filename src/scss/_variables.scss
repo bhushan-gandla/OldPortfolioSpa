@@ -1,0 +1,68 @@
+@import "mixins";
+@import "functions";
+
+// defining theme colors
+$primary: #272243;
+$secondary: #717070;
+$highlight: #FFDD4E;
+$tertiary: #F7F7F7;
+
+// defining non theme colors
+$light-highlight: #FFF1B9;
+$border-color: #D0D0D0;
+$footer-nav-item-background-color: #E6E6E6;
+
+// adding bootstrap related maps and definitions
+// adding the defined colors in theme map.
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "highlight": $highlight,
+  "tertiary": $tertiary
+);
+
+// base font size
+$base-size: 16;
+
+// spacer definition
+$spacer-9: pxToRem(9);
+$spacer-15: pxToRem(15);
+// $spacer-21: pxToRem(21);
+// $spacer-27: pxToRem(27);
+$spacer-36: pxToRem(36);
+$spacer-45: pxToRem(45);
+
+$spacers: (
+  0: 0,
+  1: ($spacer-9),
+  2: ($spacer-15),
+  3: ($spacer-36),
+  4: ($spacer-45)
+);
+
+
+// custom variables
+$nav-bar-height: pxToRem(90);
+$nav-bar-md-height: pxToRem(135);
+$heading-1: pxToRem(27);
+$heading-2: pxToRem(18);
+$common-box-shadow-focus-ring: 0 0 0 1px #fff, 0 0 0 3px rgba(59, 153, 252, 0.7);
+
+$font-family-DM-serif: 'DM Serif Display', serif;
+$card-box-shadow: 0px 1px 12px rgba(39, 34, 67, 0.09);
+
+// bootstrap variables overrides
+$body-color: $primary;
+$font-family-base: 'Roboto', sans-serif;
+$grid-gutter-width: 45px;
+$card-border-width: 0;
+$card-border-radius: 9px;
+$card-spacer-x: pxToRem(36);
+$carousel-indicator-width: pxToRem(12);
+$carousel-indicator-height: pxToRem(12);
+$carousel-indicator-active-bg: $primary;
+$carousel-indicator-spacer: pxToRem(9);
+$input-btn-focus-box-shadow: $common-box-shadow-focus-ring;
+
+
+
